@@ -42,6 +42,7 @@ procura por duplicatas.
                 del self.duplicates[key]
         pprint.pprint(self.duplicates)
 
+## Descomentar o seguinte bloco para mover arquivos duplicados para a pasta /home/vicerodrigues/Downloads/teste/
 #        for key in self.duplicates:
 #            #print (key)
 #            try:
