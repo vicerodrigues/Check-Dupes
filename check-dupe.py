@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import os, os.path
-import shutil
+#import shutil
 import time
 import sys
 import hashlib
@@ -41,21 +41,14 @@ procura por duplicatas.
                 self.uniques[key]=value
                 del self.duplicates[key]
         pprint.pprint(self.duplicates)
-        for key in self.duplicates:
-            #print (key)
-            try:
-                shutil.move(key, '/home/vicerodrigues/Downloads/teste/')
-            except:
-                pass
 
-#        for key, value in self.fileHash.items():
-#            file1, hash1=key, value
-#            for key, value in self.fileHash.items():
-#                file2, hash2=key, value
-#                if (file2!=file1 and hash2==hash1):
-#                    print('%s equivale a --> %s\n' %(file1, file2))
-        #Fazendo o print de valores
-        #pprint.pprint(self.fileHash)
+#        for key in self.duplicates:
+#            #print (key)
+#            try:
+#                shutil.move(key, '/home/vicerodrigues/Downloads/teste/')
+#            except:
+#                pass
+
         print('\n')
         #Fechando o Script e imprimindo informações
         self.end=time.time()
